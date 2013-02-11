@@ -8,7 +8,8 @@
 
 #import "SMViewController.h"
 #import "SMNibViews.h"
-#import "MaView.h"
+#import "SMOutletNibView.h"
+#import "SMClassNibView.h"
 
 @interface SMViewController ()
 
@@ -19,7 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self.container1 addSubview:[MaView viewFromNib]];
+	[self.container1 addSubview:[SMOutletNibView viewFromNib]];
+	[self.container2 addSubview:[SMClassNibView viewFromNib]];
+	[self.container3 addSubview:[SMOutletNibView viewFromNibNamed:@"SMOutletNibViewAlternate"]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -20,6 +20,11 @@
 		3D6A65B116C86178006DCA57 /* SMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A65AF16C86178006DCA57 /* SMViewController.xib */; };
 		3D6A65C016C86381006DCA57 /* NSObject+SMNibViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A65BF16C86381006DCA57 /* NSObject+SMNibViews.m */; };
 		3D6A65C316C86393006DCA57 /* UIView+SMNibViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A65C216C86393006DCA57 /* UIView+SMNibViews.m */; };
+		3DEB087F16C8B7A2005721B2 /* SMOutletNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEB087D16C8B7A2005721B2 /* SMOutletNibView.m */; };
+		3DEB088016C8B7A2005721B2 /* SMOutletNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEB087E16C8B7A2005721B2 /* SMOutletNibView.xib */; };
+		3DEB08A716C8BC27005721B2 /* SMClassNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEB08A516C8BC27005721B2 /* SMClassNibView.m */; };
+		3DEB08A816C8BC27005721B2 /* SMClassNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEB08A616C8BC27005721B2 /* SMClassNibView.xib */; };
+		3DEB08AA16C8BC82005721B2 /* SMOutletNibViewAlternate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEB08A916C8BC82005721B2 /* SMOutletNibViewAlternate.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,13 @@
 		3D6A65BF16C86381006DCA57 /* NSObject+SMNibViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SMNibViews.m"; sourceTree = "<group>"; };
 		3D6A65C116C86393006DCA57 /* UIView+SMNibViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SMNibViews.h"; sourceTree = "<group>"; };
 		3D6A65C216C86393006DCA57 /* UIView+SMNibViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SMNibViews.m"; sourceTree = "<group>"; };
+		3DEB087C16C8B7A2005721B2 /* SMOutletNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOutletNibView.h; sourceTree = "<group>"; };
+		3DEB087D16C8B7A2005721B2 /* SMOutletNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMOutletNibView.m; sourceTree = "<group>"; };
+		3DEB087E16C8B7A2005721B2 /* SMOutletNibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMOutletNibView.xib; sourceTree = "<group>"; };
+		3DEB08A416C8BC27005721B2 /* SMClassNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClassNibView.h; sourceTree = "<group>"; };
+		3DEB08A516C8BC27005721B2 /* SMClassNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClassNibView.m; sourceTree = "<group>"; };
+		3DEB08A616C8BC27005721B2 /* SMClassNibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMClassNibView.xib; sourceTree = "<group>"; };
+		3DEB08A916C8BC82005721B2 /* SMOutletNibViewAlternate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMOutletNibViewAlternate.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6A65BD16C86381006DCA57 /* SMNibViews */,
+				3DEB087B16C8B77D005721B2 /* View Classes */,
 				3D6A659A16C86178006DCA57 /* Classes */,
 				3D6A659316C86178006DCA57 /* Frameworks */,
 				3D6A659216C86178006DCA57 /* Products */,
@@ -128,6 +141,20 @@
 			path = ../SMNibViews;
 			sourceTree = "<group>";
 		};
+		3DEB087B16C8B77D005721B2 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB087C16C8B7A2005721B2 /* SMOutletNibView.h */,
+				3DEB087D16C8B7A2005721B2 /* SMOutletNibView.m */,
+				3DEB087E16C8B7A2005721B2 /* SMOutletNibView.xib */,
+				3DEB08A916C8BC82005721B2 /* SMOutletNibViewAlternate.xib */,
+				3DEB08A416C8BC27005721B2 /* SMClassNibView.h */,
+				3DEB08A516C8BC27005721B2 /* SMClassNibView.m */,
+				3DEB08A616C8BC27005721B2 /* SMClassNibView.xib */,
+			);
+			name = "View Classes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +212,9 @@
 				3D6A65A916C86178006DCA57 /* Default@2x.png in Resources */,
 				3D6A65AB16C86178006DCA57 /* Default-568h@2x.png in Resources */,
 				3D6A65B116C86178006DCA57 /* SMViewController.xib in Resources */,
+				3DEB088016C8B7A2005721B2 /* SMOutletNibView.xib in Resources */,
+				3DEB08A816C8BC27005721B2 /* SMClassNibView.xib in Resources */,
+				3DEB08AA16C8BC82005721B2 /* SMOutletNibViewAlternate.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +230,8 @@
 				3D6A65AE16C86178006DCA57 /* SMViewController.m in Sources */,
 				3D6A65C016C86381006DCA57 /* NSObject+SMNibViews.m in Sources */,
 				3D6A65C316C86393006DCA57 /* UIView+SMNibViews.m in Sources */,
+				3DEB087F16C8B7A2005721B2 /* SMOutletNibView.m in Sources */,
+				3DEB08A716C8BC27005721B2 /* SMClassNibView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

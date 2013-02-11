@@ -10,4 +10,6 @@
 
 @interface SMViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIView *container1;
+@property (nonatomic, weak) IBOutlet UIView *container2;
+@property (nonatomic, weak) IBOutlet UIView *container3;
 @end
