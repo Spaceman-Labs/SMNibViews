@@ -59,7 +59,6 @@
 						</array>
 					</object>
 					<string key="IBUITargetRuntime">IBCocoaTouchFramework</string>
-					<string key="IBUIDisplayName">Retina 4 Full Screen</string>
 					<int key="IBUIType">2</int>
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>

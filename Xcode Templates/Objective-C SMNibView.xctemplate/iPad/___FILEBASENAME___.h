@@ -6,7 +6,7 @@
 //___COPYRIGHT___
 //
 
-___IMPORTHEADER_cocoaTouchSubclass___
+#import <UIKit/UIKit.h>
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_cocoaTouchSubclass___
 
