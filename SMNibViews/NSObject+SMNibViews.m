@@ -8,18 +8,19 @@
 #import "NSObject+SMNibViews.h"
 #import <objc/runtime.h>
 
-static NSString *SMNibViewsAssociationKey = @"com.spacemanlabs.smnibviews";
+NSString * const SMNibViewsAssociationKey = @"com.spacemanlabs.smnibviews";
 
 @implementation NSObject (SMNibView)
 
 - (UIView *)mainViewFromNIB
 {
-	return objc_getAssociatedObject(self, &SMNibViewsAssociationKey);
+	return objc_getAssociatedObject(self, (__bridge void *)SMNibViewsAssociationKey);
 }
 
 - (void)setMainViewFromNIB:(UIView *)mainViewFromNIB
 {
-	objc_setAssociatedObject(self, &SMNibViewsAssociationKey, mainViewFromNIB, OBJC_ASSOCIATION_RETAIN);
+	objc_setAssociatedObject(self, (__bridge void *)SMNibViewsAssociationKey, mainViewFromNIB, OBJC_ASSOCIATION_RETAIN);
+
 }
 
 @end
